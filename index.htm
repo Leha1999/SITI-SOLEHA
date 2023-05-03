@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Individual Assignment</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 0px solid #DDD;
+  border-middle: 0px solid #DDD;
+}
+h2{
+  background-color: light-grey;
+  color: white;
+  font-size: 25px;
+}
+
+
+h5{
+text-align: center;
+}
+tr:first-child(even),td:first-child(even) {
+  background-color: #FAD7A0;
+  }
+ footer{
+ background-color: #D2B4DE;
+ }
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;left:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-2">CLOSE</a> 
+  <a href="index.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">HOME</a>
+  <a href="Biography.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">BIOGRAPHY</a> 
+  <a href="Resume.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">RESUME</a> 
+  <a href="timetable.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">TIME TABLE</a>
+  <a href="gallery.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">GALLERY</a>
+  
+</nav>
+
+ 
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:3px;">
+	  <img src="images/My logo.png" class="w3-circle" alt="siti soleha" style="width:5%">
+	  <a href="javascript:void(0)" class="w3-left w3-button w3-white" onclick="w3_open()">☰</a>
+	  
+		
+		
+    <!-- Right-sided navbar links. Hide them on small screens -->
+
+    <div class="w3-right w3-hide-medium">
+      <a href="Login.htm" class="w3-bar-item w3-button">Log in</a>
+      <a href="Sign up.htm" class="w3-bar-item w3-button">Sign up</a>
+    </div>
+  </div>
+    <!--------------START OF SOCIAL MEDIA LINK------------------------------------------->	
+	
+	
+</div> 
+
+
+<!-- Header WELCOME PAGE-->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="Home">
+<br>
+  <img class="w3-image" src="images/pastel.avif" alt="pastel" width="1800" height="500">
+  <div class="w3-display-middle w3-center">
+  <img src="images/me in blue.jpg" height "200" width="250" alt="gambar saya" style="text-align: left;">
+  <br><br>
+    <h1 class="w3-xlarge w3-text-black"><span class="w3-padding  w3-opacity-min"><b>HI, I'M SITI SOLEHA AND</b></span></h1>
+	<h1 class="w3-xlarge w3-text-black"><span class="w3-padding w3-opacity-min"><b>WELCOME TO MY PERSONAL WEBSITE.</b></span></h1>
+  </div>
+</header>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container  w3-center ">
+
+  <p>Find me on social media.</p>
+  
+  <div class="social-media">
+  
+ <div class="social-media w3-hover-opacity ">
+    <a href="https://www.facebook.com/your-page-url-here" target="_blank">
+      <img src="images/fb.png" height="23" width="25" alt="Facebook Logo">
+    </a>
+    <a href="https://twitter.com/" target="_blank">
+      <img src="images/twitter1.png" height="23" width="25" alt="Twitter Logo">
+    </a>
+	<a href="https://www.instagram.com/" target="_blank">
+      <img src="images/instagram.png" height="23" width="25" alt="Instagram Logo">
+    </a>
+  </div>
+
+  <p>Copyright &copy; 2023 Siti Soleha</p>
+</footer>
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</Script>
+</body>
+</html>

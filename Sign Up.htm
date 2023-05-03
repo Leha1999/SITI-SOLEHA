@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="stylesignup.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-----STYLE------>
+ <style>
+
+
+/*----------------------------------CODE FOR SIGNUP BUTTON----------------*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EBDEF0;
+}
+.signup-form{
+	width: 1000px;
+	margin: 20px auto;
+	background-color: #f8f8f8;
+	padding: 40px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px #ccc;
+	position: left-side;
+}
+main body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	background-color: #EBDEF0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+form {
+	margin: 20px auto;
+	width: 890px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+select {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 5px;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+input[type="reset"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-right: 650px;
+}
+
+input[type="button"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+ </style>
+  
+ <!--------END OF STYLE----------------------------------------------------------> 
+  <!------------START OF HEADER--------------------------------------------------------> 
+</head>
+<body>
+  <!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;left:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-28">CLOSE</a> 
+  <a href="index.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">HOME</a>
+  <a href="Biography.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">BIOGRAPHY</a> 
+  <a href="Resume.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">RESUME</a> 
+  <a href="timetable.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">TIME TABLE</a>
+  <a href="gallery.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">GALLERY</a>
+  
+</nav>
+
+
+<!-- Navbar (sit on top) -->
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:3px;">
+	  <img src="images/My logo.png" class="w3-circle" alt="siti soleha" style="width:5%">
+	  <a href="javascript:void(0)" class="w3-left w3-button w3-white" onclick="w3_open()">☰</a>	
+		
+    <!-- Right-sided navbar links. Hide them on small screens -->
+
+    <div class="w3-right w3-hide-medium w3-center">
+      <a href="index.htm" class="w3-bar-item w3-button">Back to Home</a>
+
+    </div>
+  </div>
+<!-----------------------END OF HEADER AND SOCIAL MEDIA------------------------------------------->
+  <main>
+    <body>
+	<div class="signup-form">
+	<h1>Sign Up Form</h1>
+	<form>
+		<table>
+			<tr>
+				<td><label for="fname">First Name:</label></td>
+				<td><input type="text" id="fname" name="fname" required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="lname">Last Name:</label></td>
+				<td><input type="text" id="lname" name="lname" required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="gender">Gender:</label></td>
+				<td>
+					<select id="gender" name="gender" required>
+						<option value="">Please select</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="other">Other</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="address1">Address 1:</label></td>
+				<td><input type="text" id="address1" name="address1" required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="address2">Address 2:</label></td>
+				<td><input type="text" id="address2" name="address2" required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="city">City:</label></td>
+				<td><input type="text" id="city" name="city" required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="state">State:</label></td>
+				<td>
+					<select id="state" name="state" required>
+						<option value="">Please select</option>
+						<option value="sarawak">Sarawak</option>
+						<option value="sabah">Sabah</option>
+						<option value="selangor">Selangor</option>
+						<option value="johor">Johor</option>
+						<option value="pahang">Pahang</option>
+						<option value="kelantan">Kelantan</option>
+						<option value="kedah">Kedah</option>
+						<option value="negerisembilan">Negeri Sembilan</option>
+						<option value="terengganu">Terengganu</option>
+						<option value="perak">Perak</option>
+						<option value="perlis">Perlis</option>
+						<option value="penang">Penang</option>
+						<option value="melaka">Melaka</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="pnumber">Phone Number:</label></td>
+				<td><input type="number" id="pnumber" name="pnumber" required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td><input type="email" id="email" name="email" required></td>
+			</tr>
+			
+			<tr>
+					<td><label for="ebackground">Educational Background:</label></td>
+					<td>
+						<input type="checkbox" id="SPM" name="ebackground" value="SPM">
+						<label for="SPM">Sijil Pelajaran Malaysia</label>
+						<input type="checkbox" id="diploma" name="ebackground" value="diploma">
+						<label for="diploma">Diploma</label>
+						<input type="checkbox" id="degree" name="ebackground" value="degree">
+						<label for="degree">Degree</label>
+						<input type="checkbox" id="master" name="ebackground" value="master">
+						<label for="master">Master</label>
+						<input type="checkbox" id="phd" name="ebackground" value="phd">
+						<label for="phd">PhD</label>
+					</td>
+				</tr>
+			
+			
+			<tr>
+				<td><label for="uname">Username:</label></td>
+				<td><input type="text" id="uname" name="uname" required></td>
+			</tr>
+			
+			
+			<tr>
+				<td><label for="password">Password:</label></td>
+				<td><input type="password" id="password" name="password" required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="confirm-password">Confirm Password:</label></td>
+				<td><input type="password" id="confirm-password" name="confirm-password" required></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2"><input type="submit" value="Sign Up"><input type="reset" value="Clear"><input type="button" value="Cancel"></td>
+				
+			</tr>
+			
+			
+		</table>
+		</div>
+	</form>
+</body>
+
+
+  </main>
+  <footer>
+   <p style="text-align: center;">Copyright &copy; 2023 Siti Soleha</p>
+  </footer>
+  
+  <script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</Script>
+
+</body>
+</html>

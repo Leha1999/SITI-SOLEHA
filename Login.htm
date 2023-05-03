@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Personal Website</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylelogin.css">
+  
+   <!------------START OF STYLE-------------------------------------------------------->
+ <style>
+ 
+ p{
+ text-align: center;
+ }
+h1{
+ text-align: center;
+ }
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+  }
+
+  
+
+ 
+ </style>
+ <!--------END OF STYLE----------------------------------------------------------> 
+ 
+</head>
+<body>
+  <!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;left:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-28">CLOSE</a> 
+  <a href="index.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">HOME</a>
+  <a href="Biography.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">BIOGRAPHY</a> 
+  <a href="Resume.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">RESUME</a> 
+  <a href="timetable.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">TIME TABLE</a>
+  <a href="gallery.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">GALLERY</a>
+  
+</nav>
+
+ 
+
+<!-- Navbar (sit on top) -->
+
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:3px;">
+	  <img src="images/My logo.png" class="w3-circle" alt="siti soleha" style="width:5%">
+	  <a href="javascript:void(0)" class="w3-left w3-button w3-white" onclick="w3_open()">☰</a>
+	  
+		
+		
+    <!-- Right-sided navbar links. Hide them on small screens -->
+
+    <div class="w3-right w3-hide-medium w3-center">
+      <a href="index.htm" class="w3-bar-item w3-button">Log Out</a>
+      <a href="Sign up.htm" class="w3-bar-item w3-button">Sign up</a>
+    </div>
+  </div>
+
+<!-----------------------END OF HEADER AND SOCIAL MEDIA------------------------------------------->
+  <main>
+    <body>
+	<h1>Login</h1>
+	<div class="links">
+			<p>Doesn't have and account yet?<a href="Sign Up.htm">Sign Up</a></p>
+	</div>
+	<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="images/icon2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw"> <a href="#">Forgot password?</a></span>
+  </div>
+</form>
+
+</body>
+
+
+  </main>
+  <footer>
+    <p style="text-align: center;">Copyright &copy; 2023 Siti Soleha</p>
+  </footer>
+  <script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</Script>
+</body>
+</html>

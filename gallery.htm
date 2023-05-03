@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+ body {
+ background-image: url("images/pastel.avif");
+}
+
+ footer{
+ background-color: #D2B4DE;
+ }
+ 
+table {
+  border-collapse: collapse;
+  width: 80%;
+  position: center;
+}
+
+th, td {
+  padding: 8px;
+  text-align: middle;
+  border-bottom: 1px solid #DDD;
+  text-align: center;
+}
+
+tr:hover {background-color: #D6EEEE;}
+  
+</style>
+
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;left:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-28">CLOSE</a> 
+  <a href="index.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">HOME</a>
+  <a href="Biography.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">BIOGRAPHY</a> 
+  <a href="Resume.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">RESUME</a> 
+  <a href="timetable.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">TIME TABLE</a>
+  <a href="gallery.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">GALLERY</a>
+  
+</nav>
+
+ 
+
+<!-- Navbar (sit on top) -->
+
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:3px;">
+	  <img src="images/My logo.png" class="w3-circle" alt="siti soleha" style="width:5%">
+	  <a href="javascript:void(0)" class="w3-left w3-button w3-white" onclick="w3_open()">☰</a>
+	  
+		
+		
+    <!-- Right-sided navbar links. Hide them on small screens -->
+
+    <div class="w3-right w3-hide-medium">
+      <a href="Login.htm" class="w3-bar-item w3-button">Log in</a>
+      <a href="Sign up.htm" class="w3-bar-item w3-button">Sign up</a>
+    </div>
+  </div>
+
+<!-- galleries section -->
+
+  <div class="w3-container w3-center w3-text-black w3-padding-32" id="gallery">
+  
+	<h3><b>GALLERY</b></h3>
+	<br>
+	<!-- images section -->
+	<h4><b>Collections of my favourites movie poster</h4>
+
+  <div class="w3-row-padding w3-margin-top" >
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/HP1.jpg" style="width:100%" height="245">
+      <div class="w3-container">
+        <h5>Harry Potter and the Philosopher's Stone</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/HP2.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Harry Potter and the Chamber of Secrets</h5>
+      </div>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/HP3.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Harry Potter and the Prisoner of Azkaban</h5>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+    <div class="w3-row-padding w3-margin-top" >
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/HP4.jpg" style="width:100%" height="245">
+      <div class="w3-container">
+        <h5>Harry Potter and the Goblet of Fire</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/HP5.jpg" style="width:100%" height="245">
+      <div class="w3-container">
+        <h5>Harry Potter and the Order of the Phoenix</h5>
+      </div>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/HP5.jpg" style="width:100%"height="245">
+      <div class="w3-container">
+        <h5>Harry Potter and the Half-Blood Prince</h5>
+      </div>
+    </div>
+  </div>
+  </div>
+ 
+  
+  <div class="w3-row-padding w3-margin-top" >
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/HP7.jpg" style="width:100%" height="245">
+      <div class="w3-container">
+        <h5>Harry Potter and The Deathly Hallows part 1</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/HP8.jpg" style="width:100%" height="245">
+      <div class="w3-container">
+        <h5>Harry Potter and The Deathly Hallows part 2</h5>
+      </div>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/marvel.jpg" style="width:100%" height="245">
+      <div class="w3-container">
+        <h5>Marvel: The Avengers</h5>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+
+	<!-- video section -->
+	<h4><b>Trailer</h4>
+
+  <div class="w3-row-padding w3-margin-top" >
+  <div class="w3-third">
+    <div class="w3-card">
+   <video width="300" height="250" controls>
+			<source src="video/trailer1.mp4" type="video/mp4">
+	</video>
+      <div class="w3-container">
+        <h5>Harry Potter and the Philosopher's Stone</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+   <video width="300" height="250" controls>
+			<source src="video/trailer2.mp4" type="video/mp4">
+	</video>
+      <div class="w3-container">
+        <h5>Harry Potter and the Chamber of Secrets</h5>
+      </div>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card">
+   <video width="300" height="250" controls>
+			<source src="video/trailer3.mp4" type="video/mp4">
+	</video>
+      <div class="w3-container">
+        <h5>Harry Potter and the Prisoner of Azkaban</h5>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+    <div class="w3-row-padding w3-margin-top" >
+  <div class="w3-third">
+    <div class="w3-card">
+      <video width="300" height="250" controls>
+			<source src="video/trailer4.mp4" type="video/mp4">
+	</video>
+      <div class="w3-container">
+        <h5>Harry Potter and the Goblet of Fire</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <video width="300" height="250" controls>
+			<source src="video/trailer5.mp4" type="video/mp4">
+	</video>
+      <div class="w3-container">
+        <h5>Harry Potter and the Order of the Phoenix</h5>
+      </div>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card">
+      <video width="300" height="250" controls>
+			<source src="video/trailer6.mp4" type="video/mp4">
+	</video>
+      <div class="w3-container">
+        <h5>Harry Potter and the Half-Blood Prince</h5>
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+  <br>
+  
+ <!-- video section -->
+	<h4 style="text-align: center"><b>Music</h4>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="images/bp.png" class="w3-round-xlarge" alt="blackpink" style="width:10%">
+	<h6>Blackpink - You Never Know</h6>
+	</td>
+    <td>
+	<audio controls >
+	  <source src="Music/BP you never know.mp3" type="audio/mp3">
+	</audio>
+	</td>
+  </tr>
+  <tr>
+    <td><img src="images/Bolbbalgan4.webp" class="w3-round-xlarge" alt="bbolbalgan4" style="width:10%">
+	<h6>Bol4 - To My Youth</h6>
+	</td>
+    <td>
+	<audio controls >
+	  <source src="Music/BOL4 To My Youth.mp3" type="audio/mp3">
+	</audio>
+	</td>
+  </tr>
+  <tr>
+    <td><img src="images/ive.jpg" class="w3-round-xlarge" alt="ive" style="width:10%">
+	<h6>Ive - I am</h6>
+	</</td>
+    <td>
+	<audio controls >
+	  <source src="Music/Ive I Am.mp3" type="audio/mp3">
+	</audio>
+	</td>
+  </tr>
+  <tr>
+    <td><img src="images/ost.png" class="w3-round-xlarge" alt="ost" style="width:10%">
+	<h6>Jung Seung Hwan - If It Is You</h6>
+	</</td>
+    <td>
+	<audio controls >
+	  <source src="Music/Jung Seung Hwan If It Is You.mp3" type="audio/mp3">
+	</audio>
+	</td>
+  </tr>
+  
+  <tr>
+    <td><img src="images/rose.jpg" class="w3-round-xlarge" alt="the rose" style="width:10%">
+	<h6>The Rose - Sorry</h6>
+	</</td>
+    <td>
+	<audio controls >
+	  <source src="Music/The Rose Sorry.mp3" type="audio/mp3">
+	</audio>
+	</td>
+  </tr>
+</table>
+
+<!-- End page content -->
+
+
+<!-- Footer -->
+<footer class="w3-container  w3-center ">
+
+  <p>Find me on social media.</p>
+  
+  <div class="social-media">
+  
+ <div class="social-media w3-hover-opacity " style="margin-right:3px;">
+    <a href="https://www.facebook.com/your-page-url-here" target="_blank">
+      <img src="images/fb.png" height="23" width="25" alt="Facebook Logo">
+    </a>
+    <a href="https://twitter.com/" target="_blank">
+      <img src="images/twitter1.png" height="23" width="25" alt="Twitter Logo">
+    </a>
+	<a href="https://www.instagram.com/" target="_blank">
+      <img src="images/instagram.png" height="23" width="25" alt="Instagram Logo">
+    </a>
+	
+  </div>
+
+  <p>Copyright &copy; 2023 Siti Soleha</p>
+</footer>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</Script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+h2{
+  background-color: light-grey;
+  color: white;
+  font-size: 25px;
+}
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 0px solid #DDD;
+  border-middle: 0px solid #DDD;
+}
+h2{
+  background-color: light-grey;
+  color: white;
+  font-size: 25px;
+}
+
+
+h5{
+text-align: center;
+}
+tr:first-child(even),td:first-child(even) {
+  background-color: #FAD7A0;
+  }
+  
+ .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 15px;
+
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+
+  
+
+</style>
+</head>
+<body class="w3-light-grey">
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;left:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-28">CLOSE</a> 
+  <a href="index.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">HOME</a>
+  <a href="Biography.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">BIOGRAPHY</a> 
+  <a href="Resume.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">RESUME</a> 
+  <a href="timetable.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">TIME TABLE</a>
+  <a href="gallery.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-14">GALLERY</a>
+  
+</nav>
+
+<!-- Navbar (sit on top) -->
+
+  <div class="w3-bar w3-white w3-padding w3-card" >
+	  <img src="images/My logo.png" class="w3-circle" alt="siti soleha" style="width:5%">
+	  <a href="javascript:void(0)" class="w3-left w3-button w3-white" onclick="w3_open()">☰</a>
+	  
+		
+		
+    <!-- Right-sided navbar links. Hide them on small screens -->
+
+    <div class="w3-right w3-hide-medium">
+      <a href="Login.htm" class="w3-bar-item w3-button">Log in</a>
+      <a href="Sign up.htm" class="w3-bar-item w3-button">Sign up</a>
+    </div>
+  </div>
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="images/saya.jpg" style="width:100%" height="450" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>SITI SOLEHA BINTI MOHD YUSOP</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Fresh Graduate</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Kelantan, Malaysia</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>solehaysfa@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0139340367</p>
+          <hr>
+       
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Bahasa Melayu</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <hr>
+		  
+		   <p class="w3-large w3-text-theme"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Personal Particular</b></p>
+          <ul>
+			<li>Date of Birth</li>
+				<ul>
+					<li>28 November</li>
+				</ul>
+			<li>Marital Status</li>
+				<ul>
+					<li>Single</li>
+				</ul>
+			<li>Nationality</li>
+				<ul>
+					<li>Malaysian</li>
+				</ul>
+		  </ul>
+		  
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <ul>
+			<li><b>Internship at Pejabat Perkeso Negeri Terengganu</b></li>
+				<ul>
+			<br>
+					<li><h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6></li>
+				</ul>
+		  </ul>
+		   <ul>
+			<li><b>Exposure Gained</b></li>
+				<ol>
+			<br>
+					<li>Troubleshoot a Computer</li>
+					<li>Register New Employee and Key in Data</li>
+					<li>Engage in Big Company Events</li>
+				</ol>
+		  </ul>
+
+          <hr>
+        </div>
+      
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+	   <div class="w3-container">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+       
+		<ul>
+			<h5 class="w3-opacity"><b>UiTM TEKNOLOGY MARA (UiTM, SHAH ALAM)</b></h5>
+			<ul>
+				<li>Bachelor Degree in Computer Science (Netcentric)</li>
+		</ul>
+          <hr>
+        </div>
+	<div class="w3-container w3-card w3-white">
+        <div class="w3-container">
+		<ul>
+			<h5 class="w3-opacity"><b>POLITEKNIK KUALA TERENGGANU, TERENGGANU</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2017 - Dec 2019</h6>
+			<ul>
+				<li>Diploma in Information Technology (Networking)</li>
+				<li>CGPA: 3.27</li>
+			</ul>
+		</ul>
+          <hr>
+        </div>
+		
+        <div class="w3-container">
+       
+		<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Networking</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Canva</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Media</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+		  
+		  <br>
+
+	<button class="btn "><i class="fa fa-download" style="font-size:center"></i> Download</button>
+		
+      </div>
+	 
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+
+<footer class="w3-container w3-center w3-margin-top">
+
+  <p>Find me on social media.</p>
+  
+  <div class="social-media">
+  
+ <div class="social-media w3-hover-opacity " style="margin-right:3px;">
+    <a href="https://www.facebook.com/your-page-url-here" target="_blank">
+      <img src="images/fb.png" height="23" width="25" alt="Facebook Logo">
+    </a>
+    <a href="https://twitter.com/" target="_blank">
+      <img src="images/twitter1.png" height="23" width="25" alt="Twitter Logo">
+    </a>
+	<a href="https://www.instagram.com/" target="_blank">
+      <img src="images/instagram.png" height="23" width="25" alt="Instagram Logo">
+    </a>
+	
+  </div>
+
+  <p>Copyright &copy; 2023 Siti Soleha</p>
+</footer>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</Script>
+</body>
+</html>
